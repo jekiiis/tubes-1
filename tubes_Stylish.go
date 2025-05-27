@@ -30,7 +30,7 @@ func inputOutfit(A *tabOutfit, n *int) {
 		fmt.Scan(&A[*n].sepatu)
 		fmt.Print("\nAksesoris: ")
 		fmt.Scan(&A[*n].aksesoris)
-		fmt.Print("Tingkat kategori (1=kasual, 2=semi, 3=formal): ")
+		fmt.Print("Tingkat kategori (1 = kasual, 2 = semi, 3 = formal): ")
 		fmt.Scan(&A[*n].kategori)
 		fmt.Print("Tanggal terakhir dipakai (yyyymmdd): ")
 		fmt.Scan(&A[*n].terakhir)
@@ -129,7 +129,7 @@ func cariWarnaSequential(A tabOutfit, n int) {
 		return
 	}
 
-	fmt.Print("Masukkan warna: ")
+	fmt.Print("Masukkan Warna: ")
 	fmt.Scan(&warna)
 	isKetemu = false
 	k = 0
@@ -142,9 +142,9 @@ func cariWarnaSequential(A tabOutfit, n int) {
 	}
 
 	if isKetemu {
-		fmt.Println("Warna tesebut tersedia")
+		fmt.Println("Warna Tersebut Tersedia")
 	} else {
-		fmt.Println("Warna tesebut tidak tersedia")
+		fmt.Println("Warna Tersebut Tidak Tersedia")
 	}
 }
 
